@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  display: block;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #111;
+}
+
+/* Main Content */
+main {
+  padding: 120px 20px 20px; /* Add top padding to offset the fixed navbar */
+}
+
+.services-intro {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-intro h1 {
+  font-size: 2.5em;
+}
+
+.services-intro p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.service-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card h3 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.product-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.product-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.5em;
+  color: #222;
+}
+
+.product-card p {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.product-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.product-btn:hover {
+  background-color: #e64a19;
+}
+
+
+</style>
+<body>
+  <!-- Fixed Navbar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="services-intro">
+      <h1>Our Services</h1>
+      <p>We offer a variety of services to ensure that you have everything you need to enjoy the game of cricket.</p>
+    </section>
+
+    <section class="services-list">
+      <div class="service-card">
+        <h3>Custom Cricket Kits</h3>
+        <p>We provide custom cricket kits tailored to your needs. Choose your gear based on your preferences and budget.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Equipment Maintenance</h3>
+        <p>We offer maintenance services for your cricket equipment, including bat repairs, gloves stitching, and more.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Personalized Coaching</h3>
+        <p>Our experienced coaches offer one-on-one or group training sessions for players of all levels.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Bulk Orders for Teams</h3>
+        <p>Get special discounts on bulk orders for your entire team. We provide wholesale prices for clubs and schools.</p>
+      </div>
+    </section>
+  </main>
+  <section class="product-section">
+    <h2>Our Cricket Kits</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="Capture.PNG" alt="Cricket Kit 1">
+        <h3>Basic Cricket Kit</h3>
+        <p>Perfect for beginners. Includes bat, gloves, pads, and helmet.</p>
+        <a href="#" class="product-btn">Buy Now</a>
+      </div>
+  
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="png.PNG" alt="Cricket Kit 2">
+        <h3>Pro Player Kit</h3>
+        <p>High-quality gear used by professionals. Light and durable.</p>
+        <a href="#" class="product-btn">Buy Now</a>
+      </div>
+  
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="Capture4.PNG" alt="Cricket Kit 3">
+        <h3>Kids Cricket Kit</h3>
+        <p>Specially designed for kids aged 8-14. Lightweight and safe.</p>
+        <a href="#" class="product-btn">Buy Now</a>
+      </div>
+  
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="Capture3.PNG" alt="Cricket Kit 4">
+        <h3>All-Rounder Kit</h3>
+        <p>Ideal for all playing styles. Comes with protective gear.</p>
+        <a href="#" class="product-btn">Buy Now</a>
+      </div>
+  
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="CAPTURE5.PNG" alt="Cricket Kit 5">
+        <h3>Bowler's Kit</h3>
+        <p>Customized for bowlers. Includes arm guard, shoes, and more.</p>
+        <a href="#" class="product-btn">Buy Now</a>
+      </div>
+  
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="CAPTURE6.PNG" alt="Cricket Kit 6">
+        <h3>Batsman's Dream Kit</h3>
+        <p>Lightweight bat, gloves, and thigh pads for comfort and safety.</p>
+        <a href="#" class="product-btn">Buy Now</a>
+      </div>
+  
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img src="CAPTURE8.PNG" alt="Cricket Kit 7">
+        <h3>School Team Kit</h3>
+        <p>Perfect for school teams. Affordable and reliable.</p>
+        <a href="#" class="product-btn">Buy Now</a>
+      </div>
+  
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img src="CAPTURE9.PNG" alt="Cricket Kit 8">
+        <h3>Premium Test Kit</h3>
+        <p>For serious players. Top-tier protection and comfort.</p>
+        <a href="#" class="product-btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+</body>
+</html>
